@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --roboto: "Roboto", Arial, sans-serif;
+  --yellow: #e6af2e;
+  --black: #464646;
+
+  --xxx-small: 0.125rem;
+  --xx-small: 0.25rem;
+  --x-small: 0.5rem;
+  --small: 1rem;
+  --medium: 2rem;
+  --large: 4rem;
+  --x-large: 8rem;
+  --xx-large: 16rem;
+  --xxx-large: 32rem;
+
+  --website-margin: 7%;
+}
+
+/* fonts */
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Layout */
+
+body {
+  font-family: var(--roboto);
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  color: var(--black);
+
+  display: grid;
+  grid-template-columns: var(--website-margin) repeat(10, 1fr) var(
+      --website-margin
+    );
+  grid-template-rows: auto;
+  height: 100vh;
+}
+
+.website-nav {
+  grid-column: 1 / -1;
+  height: var(--large);
+  display: flex;
+  justify-content: flex-end;
+
+  font-size: var(--medium);
+  box-shadow: 0 1px 5px #8a8a8a;
+  padding-right: var(--website-margin);
+  padding-left: var(--website-margin);
+}
+
+.website-nav > div {
+  padding-top: var(--small);
+  padding-bottom: var(--small);
+}
+
+.nav-buttons {
+  padding-left: var(--small);
+}
+
+.logo {
+  margin-right: auto;
+  color: var(--yellow);
+}
+
+.logo span {
+  color: #808080;
+}
+
+/* Sections */
+.hero-section {
+  grid-column: 2 / 12;
+  display: flex;
+  padding-top: var(--large);
+  padding-bottom: var(--medium);
+}
+.hero-text {
+  z-index: 5;
+}
+.hero-section > div > h1,
+h2 {
+  margin: 0;
+}
+
+.hero-section > div > h1 {
+  font-size: var(--x-large);
+}
+
+.hero-section > div > h2 {
+  font-size: var(--large);
+}
+.hero-section > div > p {
+  font-size: var(--small);
+  width: 95%;
+  line-height: var(--medium);
+  margin: 0;
+
+  padding-top: var(--small);
+  padding-bottom: var(--small);
+}
+.hero-section > div > button {
+  background-color: var(--yellow);
+  padding: var(--small);
+  width: 30%;
+
+  border-radius: var(--xx-small);
+  border: none;
+  color: var(--black);
+  font-family: var(--roboto);
+  font-size: var(--small);
+}
+
+/* hero section images */
+.desktop-wireframe {
+  width: 100%;
+  position: relative;
+  left: 0%;
+  z-index: -1;
+}
+.tablet-wireframe {
+  width: 40%;
+  position: relative;
+  bottom: 20%;
+  right: 4%;
+  z-index: 1;
+}
+.phone-wireframe {
+  width: 15%;
+  position: relative;
+  z-index: 2;
+  bottom: 20%;
+  left: 35%;
+}
+.contact-section {
+  grid-column: 2 / 12;
+}
+
+footer {
+  grid-column: 2 / 12;
+}

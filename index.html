@@ -1,17 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jozua Patalan</title>
 
-    <link rel="icon" type="image/png" href="./media/icons/favicon-96x96.png" sizes="96x96" />
+    <!-- icons for this website -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./media/icons/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="./media/icons/favicon.svg" />
     <link rel="shortcut icon" href="./media/icons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./media/icons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./media/icons/apple-touch-icon.png"
+    />
     <link rel="manifest" href="./media/icons/site.webmanifest" />
-</head>
-<body>
-    
-</body>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- main navigation -->
+    <nav class="website-nav bebas-neue-regular">
+      <div class="logo"><span>{</span> Jozua <span>}</span></div>
+      <div class="nav-buttons">About Me</div>
+      <div class="nav-buttons">Works</div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1 class="bebas-neue-regular">I am Jozua</h1>
+        <h2 class="bebas-neue-regular">your next web developer</h2>
+
+        <p>
+          A full-stack developer with a passion for telling stories and helping
+          brands create meaningful experiences for users.
+        </p>
+
+        <button>Contact Me</button>
+      </div>
+
+      <div>
+        <img
+          src="./media/landing-page/desktop-wireframe.svg"
+          alt="desktop wireframe"
+          class="desktop-wireframe"
+        />
+        <img
+          src="./media/landing-page/tablet-wireframe.svg"
+          alt="tablet wireframe"
+          class="tablet-wireframe"
+        />
+        <img
+          src="./media/landing-page/phone-wireframe.svg"
+          alt="phone wireframe"
+          class="phone-wireframe"
+        />
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div>
+        <ul>
+          <h2>Contact Me</h2>
+          <li>
+            <span>Address:</span>
+            2 Eisenhower Drive, Middletown New York, 10940
+          </li>
+          <li>
+            <span>Telephone Number:</span>
+            +1 (845)-775-8437
+          </li>
+          <li>
+            <span>Email:</span>
+            jozuapatalan@gmail.com
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Send me a message</h3>
+        <form action="">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <ul>
+          <h3>Find me on</h3>
+          <li>
+            <img src="#" alt="github icon" />
+          </li>
+          <li>
+            <img src="#" alt="linkedin icon" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>Copyright &copy; 2025 Jozua Patalan. All rights reserved</footer>
+  </body>
 </html>
