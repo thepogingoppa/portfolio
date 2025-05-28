@@ -9,17 +9,17 @@
     <link
       rel="icon"
       type="image/png"
-      href="./media/icons/favicon-96x96.png"
+      href="./media/icons/website-icons/favicon-96x96.png"
       sizes="96x96"
     />
-    <link rel="icon" type="image/svg+xml" href="./media/icons/favicon.svg" />
-    <link rel="shortcut icon" href="./media/icons/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./media/icons/website-icons/favicon.svg" />
+    <link rel="shortcut icon" href="./media/icons/website-icons/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./media/icons/apple-touch-icon.png"
+      href="./media/icons/website-icons/apple-touch-icon.png"
     />
-    <link rel="manifest" href="./media/icons/site.webmanifest" />
+    <link rel="manifest" href="./media/icons/website-icons/site.webmanifest" />
 
     <!-- styles -->
     <link rel="stylesheet" href="./styles.css" />
@@ -43,7 +43,7 @@
           brands create meaningful experiences for users.
         </p>
 
-        <button>Contact Me</button>
+        <button class="website-button">Contact Me</button>
       </div>
 
       <div>
@@ -67,50 +67,57 @@
 
     <section class="contact-section">
       <div>
-        <ul>
-          <h2>Contact Me</h2>
+        <ul class="list-type-none">
+          <h2 class="bebas-neue-regular">Contact Me</h2>
           <li>
+            <img src="./media/icons/contact-icons/home.svg" class="contact-icon" alt="house icon">
             <span>Address:</span>
             2 Eisenhower Drive, Middletown New York, 10940
           </li>
           <li>
+            <img src="./media/icons/contact-icons/call.svg" class="contact-icon" alt="phone icon">
             <span>Telephone Number:</span>
             +1 (845)-775-8437
           </li>
           <li>
+            <img src="./media/icons/contact-icons/mail.svg" class="contact-icon" alt="envelope icon">
             <span>Email:</span>
             jozuapatalan@gmail.com
           </li>
         </ul>
       </div>
+      </section>
 
-      <div>
-        <h3>Send me a message</h3>
-        <form action="">
-          <input type="text" id="name" placeholder="Name" />
-          <input type="email" id="email" placeholder="Email" required />
-          <input type="text" id="subject" placeholder="Subject" required />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Message"
-          ></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-
-      <div>
-        <ul>
-          <h3>Find me on</h3>
-          <li>
-            <img src="#" alt="github icon" />
-          </li>
-          <li>
-            <img src="#" alt="linkedin icon" />
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section class="message-section">
+        <h3 class="bebas-neue-regular message-section-subtitle" >Send me a message</h3>
+        <div class="message-form">
+          <form action="">
+            <input type="text" id="name" placeholder="Name" />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="text" id="subject" placeholder="Subject" required />
+          </form>
+          <div class="message-container">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="website-button submit-button">Send Message</button>
+          </div>
+        </div>
+        
+        <h3 class="bebas-neue-regular message-section-subtitle">Find me on</h3>
+        <div class="social-media">
+          <ul class="list-type-none">
+            <li>
+              <img src="./media/icons/contact-icons/github-round.svg" class="socials-icons" alt="github icon" />
+            </li>
+            <li>
+              <img src="./media/icons/contact-icons/linkedin-round.svg"class="socials-icons" alt="linkedin icon" />
+            </li>
+          </ul>
+        </div>
+      </section>
 
     <footer>Copyright &copy; 2025 Jozua Patalan. All rights reserved</footer>
   </body>
