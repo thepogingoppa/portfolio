@@ -1,0 +1,103 @@
+/* 
+ABOUT.CSS
+-> This file contains styles for the about page of the website.
+*/
+
+/* Layout */
+main {
+  grid-column: 2 / 12;
+  height: auto;
+  padding-bottom: var(--x-large);
+}
+
+.bio > h1 {
+  font-size: var(--large);
+  margin-bottom: 0;
+  padding-bottom: var(--small);
+}
+
+.bio > span {
+  font-size: var(--medium);
+}
+
+.bio > p {
+  width: 40%;
+  line-height: var(--medium);
+}
+
+.about-subtitle {
+  color: var(--yellow);
+  font-size: var(--medium);
+  padding-bottom: var(--small);
+  border-bottom: 2px solid var(--black);
+}
+
+/* skills */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills > div {
+  width: 25%;
+  line-height: var(--medium);
+}
+
+.skills > div > h3 {
+  font-size: var(--m-small);
+  margin-bottom: var(--x-small);
+}
+
+.skills > div > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* education */
+
+.school > h3 {
+  font-size: var(--medium);
+  margin-top: 0;
+  margin-bottom: var(--x-small);
+}
+.school-year {
+  font-size: var(--small);
+}
+.education {
+  display: flex;
+  flex-wrap: wrap;
+}
+.degree {
+  font-weight: bold;
+}
+.education > div {
+  width: 25%;
+}
+
+.relevant-courses ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: var(--medium);
+  margin: 0;
+}
+.relevant-courses ul > span {
+  font-weight: bold;
+}
+
+/* Work Experience */
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: var(--medium);
+}
+.company h3 {
+  font-size: var(--medium);
+  margin-top: 0;
+  margin-bottom: var(--x-small);
+}
+.company {
+  width: 25%;
+}
+.company > h3 {
+  margin-top: 0;
+}

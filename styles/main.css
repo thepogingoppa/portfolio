@@ -1,0 +1,7 @@
+/* 
+ MAIN.CSS
+ - > This file is the main entry point for shared styles across the website
+*/
+@import url("./base.css");
+@import url("./nav.css");
+@import url("./footer.css");

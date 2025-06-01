@@ -1,0 +1,12 @@
+/* footer */
+footer {
+  grid-column: 2 / 12;
+  border-top: 1px solid var(--black);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: var(--small);
+  padding-bottom: var(--large);
+  font-weight: bold;
+}

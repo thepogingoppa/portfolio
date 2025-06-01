@@ -1,79 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-:root {
-  --roboto: "Roboto", Arial, sans-serif;
-  --yellow: #e6af2e;
-  --black: #464646;
-  --black-svg-filter: invert(24%) sepia(5%) saturate(25%) hue-rotate(316deg) brightness(25%) contrast(87%);;
-
-  --xxx-small: 0.125rem;
-  --xx-small: 0.25rem;
-  --x-small: 0.5rem;
-  --small: 1rem;
-  --medium: 2rem;
-  --large: 4rem;
-  --x-large: 8rem;
-  --xx-large: 16rem;
-  --xxx-large: 32rem;
-
-  --website-margin: 7%;
-}
-
-/* fonts */
-
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Layout */
-
-body {
-  font-family: var(--roboto);
-  margin: 0;
-  padding: 0;
-  border: 0;
-
-  color: var(--black);
-
-  display: grid;
-  grid-template-columns: var(--website-margin) repeat(10, 1fr) var(
-      --website-margin
-    );
-  grid-template-rows: auto;
-  height: 100vh;
-}
-
-.website-nav {
-  grid-column: 1 / -1;
-  height: var(--large);
-  display: flex;
-  justify-content: flex-end;
-
-  font-size: var(--medium);
-  box-shadow: 0 1px 5px #8a8a8a;
-  padding-right: var(--website-margin);
-  padding-left: var(--website-margin);
-}
-
-.website-nav > div {
-  padding-top: var(--small);
-  padding-bottom: var(--small);
-}
-
-.nav-buttons {
-  padding-left: var(--small);
-}
-
-.logo {
-  margin-right: auto;
-  color: var(--yellow);
-}
-
-.logo span {
-  color: #808080;
-}
+/* 
+INDEX.CSS
+-> This file contains the styles for the home page of the website.
+*/
 
 /* Hero Section */
 .hero-section {
@@ -149,29 +77,29 @@ h2 {
 .contact-section h2 {
   font-size: var(--large);
 }
-.list-type-none{
+.list-type-none {
   list-style-type: none;
   padding-left: 0;
 }
 .contact-section li {
   padding-top: var(--x-small);
 }
-.contact-section li img{
+.contact-section li img {
   color: var(--black);
-  position:relative;
+  position: relative;
   bottom: -5px;
 }
 .contact-section span {
-  font-weight:bold ;
+  font-weight: bold;
 }
 
 .contact-icon {
-  filter: var(--black-svg-filter)
+  filter: var(--black-svg-filter);
 }
 
 /* message section */
 .message-section {
-  grid-column: 2 / 12; 
+  grid-column: 2 / 12;
   display: flex;
   flex-direction: column;
   padding-bottom: var(--xx-large);
@@ -188,7 +116,9 @@ h2 {
 .message-container {
   flex-basis: 50%;
 }
-#name, #email, #subject {
+#name,
+#email,
+#subject {
   width: 90%;
   height: 5%;
   padding: var(--small);
@@ -227,18 +157,4 @@ h2 {
 }
 .social-media ul li {
   padding-right: var(--small);
-}
-
-
-/* footer */
-footer {
-  grid-column: 2 / 12;
-  border-top: 1px solid var(--black);
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-top:var(--small);
-  padding-bottom: var(--large);
-  font-weight: bold;
 }
