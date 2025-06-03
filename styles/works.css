@@ -1,0 +1,56 @@
+/* 
+    WORKS.CSS
+    -> This file contains the styles for the Works section of the website.
+*/
+
+main {
+  grid-column: 2 / 12;
+  height: auto;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding-bottom: var(--x-large);
+}
+main > h1 {
+  font-size: var(--large);
+  margin-bottom: 0;
+}
+main > p {
+  margin-top: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: var(--medium);
+}
+
+/* project 1 */
+.project {
+  width: 30%;
+  height: fit-content;
+  border: 1px solid var(--black);
+  border-radius: var(--x-small);
+  padding-bottom: var(--small);
+}
+.project-image {
+  position: relative;
+  border-radius: var(--x-small);
+  width: 100%;
+  display: block;
+}
+.project-text {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.project-text p {
+  line-height: var(--medium);
+  margin-top: 0;
+}
+.project-text h1 {
+  margin-bottom: 0;
+}
