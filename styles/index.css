@@ -46,6 +46,11 @@ h2 {
   font-size: var(--small);
 }
 
+.website-button:hover {
+  background-color: white;
+  color: var(--black);
+  border: 1px solid var(--yellow);
+}
 /* hero section images */
 .desktop-wireframe {
   width: 100%;

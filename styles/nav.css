@@ -15,6 +15,16 @@
   padding-left: var(--website-margin);
 }
 
+.website-nav > div a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.website-nav > div a:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
 .website-nav > div {
   padding-top: var(--small);
   padding-bottom: var(--small);
