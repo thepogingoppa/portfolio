@@ -32,6 +32,7 @@
 
 .nav-buttons {
   padding-left: var(--small);
+  padding-right: var(--small);
 }
 
 .logo {
@@ -41,4 +42,10 @@
 
 .logo span {
   color: #808080;
+}
+
+/* JavaScript Styles */
+
+.selected {
+  border-bottom: 5px solid var(--yellow);
 }

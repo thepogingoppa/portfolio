@@ -73,6 +73,20 @@ h2 {
   left: 35%;
 }
 
+.cursor {
+  content: "";
+  opacity: 0;
+  animation: blink 0.75s linear infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Contact Section */
 .contact-section {
   grid-column: 2 / 12;
